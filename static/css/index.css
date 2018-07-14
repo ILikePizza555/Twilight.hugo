@@ -71,6 +71,10 @@ aside {
     background-color: #c79dd7;
 }
 
+main {
+    padding: 2rem;
+}
+
 @media (max-width: 48em) {
     .root-flex-container  {
         flex-direction: column;
