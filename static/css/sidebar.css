@@ -63,12 +63,14 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
     background-color: #c79dd7;
 }
 
+/* Medium screens */
 @media screen and (min-width: 48rem) {
     .site-header > h1 {
         font-size: 38px;
     }
 }
 
+/* Large screens */
 @media screen and (min-width: 60rem) {
     .sidebar {
         display: flex;
@@ -86,8 +88,9 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
     }
 }
 
-/* Fixed max width here so the sidebar isn't 2000 pixels long on huge screens */
+/* Extra large screens */
 @media screen and (min-width: 80rem) {
+    /* Fixed max width here so the sidebar isn't 2000 pixels long on huge screens */
     .sidebar {
         max-width: 25em;
     }

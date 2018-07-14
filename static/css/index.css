@@ -28,6 +28,10 @@ main {
     margin: 1rem 0rem 3rem 0rem;
 }
 
+.article-header {
+    line-height: 1;
+}
+
 .article-header > h1 {
     margin: 0px;
 }
@@ -41,6 +45,7 @@ main {
     margin: 1rem 0rem 1rem 0;
 }
 
+/* Medium sized screens */
 @media screen and (min-width: 48rem) {
     body {
         font-size: 18px;
@@ -55,6 +60,7 @@ main {
     }
 }
 
+/* Large screens */
 @media screen and (min-width: 60rem) {
     .root-flex-container {
         flex-direction: row;
