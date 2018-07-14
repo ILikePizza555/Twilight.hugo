@@ -9,7 +9,7 @@
     {{ range $paginator.Pages.Reverse }}
         <article class="list-item">
             <header class="article-header">
-                <h1 class="article-header"><a href="{{.RelPermalink}}">{{upper .Title}}</a></h1>
+                <h1><a href="{{.RelPermalink}}">{{upper .Title}}</a></h1>
                 <small class="date">{{ .Date.Format "01 January 2006" }}</small>
             </header>
             <section class="content-summary">
