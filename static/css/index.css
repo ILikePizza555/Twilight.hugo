@@ -5,6 +5,11 @@ body {
     height: 100%;
 }
 
+.flex-container {
+    display: flex;
+    align-content: flex-start;
+}
+
 nav {
     width: 18em;
     background-color: #363b74;
@@ -35,15 +40,29 @@ nav {
     background-color: #c79dd7;
 }
 
-.flex-container {
-    display: flex;
-    align-content: flex-start;
-}
-
 .root {
     height: 100%;
 }
 
-@media (min-width: 48em) {
+@media (max-width: 48em) {
+    .flex-container {
+        flex-direction: column;
+    }
 
+    nav {
+        width: 100%;
+        height: 18em;
+    }
+
+    .l-container {
+        width: 100%;
+        height: 15px;
+        float: none;
+    }
+
+    .l-container > .l {
+        float: none;
+        width: 100%;
+        height: 5px;
+    }
 }
