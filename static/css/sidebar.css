@@ -63,9 +63,16 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
     background-color: #c79dd7;
 }
 
+@media screen and (min-width: 48rem) {
+    .site-header > h1 {
+        font-size: 38px;
+    }
+}
+
 @media screen and (min-width: 60rem) {
     .sidebar {
         display: flex;
+        max-width: 25%;
     }
 
     .l-container {
