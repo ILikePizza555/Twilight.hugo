@@ -38,6 +38,14 @@ aside {
     margin-bottom: 0px;
 }
 
+.nav-links {
+    margin-top: 2rem;
+}
+
+.site-header a {
+    color: white;
+}
+
 .l-container {
     width: 15px;
     height: 100%;
@@ -71,7 +79,6 @@ aside {
     aside {
         flex-direction: column;
         width: 100%;
-        height: 18em;
     }
 
     .l-container {
