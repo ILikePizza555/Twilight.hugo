@@ -13,7 +13,7 @@
                 <small class="date">{{ .Date.Format "01 January 2006" }}</small>
             </header>
             <section class="content-summary">
-                {{ .Summary }}
+                {{ .Render "summary" }}
             </section>
         </article>
     {{ end }}
