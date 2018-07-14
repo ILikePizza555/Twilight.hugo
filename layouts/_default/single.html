@@ -3,4 +3,14 @@
 {{ end }}
 
 {{ define "content"}}
+<article>
+    <header class="article-header">
+        <h1><a href="{{.RelPermalink}}">{{upper .Title}}</a></h1>
+        <small class="date">{{ .Date.Format "01 January 2006" }}</small>
+    </header>
+    <div>
+        {{ .Content }}
+    </div>
+    {{- partial "disqus" -}}
+</article>
 {{ end }}
