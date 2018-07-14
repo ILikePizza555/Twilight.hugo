@@ -14,6 +14,14 @@
                 <header class="aside-content-container site-header">
                     <h1>{{ .Site.Params.title }}</h1>
                     <small>{{ .Site.Params.tagline }}</small>
+                    <nav>
+                        {{range .Site.Params.profile.links }}
+                            <div class="link"><a href="{{ .href }}">{{ upper .text }}</a></div>
+                        {{ end }}
+                        {{range .Site.Params.links}}
+                            <div class="link"><a href="{{ .href }}">{{ upper .text }}</a></div>
+                        {{end}}
+                    </nav>
                 </header>
                 <div class="l-container">
                     <p class="l l1"></p>
