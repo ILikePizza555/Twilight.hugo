@@ -55,4 +55,9 @@ main {
     .root-flex-container {
         flex-direction: row;
     }
+
+    main {
+        max-width: 60rem;
+        margin-left: 7rem;
+    }
 }
