@@ -74,6 +74,11 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
 @media screen and (min-width: 60rem) {
     .sidebar {
         display: flex;
+
+        /* Need to fix the sidebar so that it stays on the side as we scroll. */
+        position: fixed;
+        height: 100%;
+        width: 22em;
     }
 
     .l-container {
@@ -85,13 +90,5 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
     .l-container > .l {
         width: 5px;
         height: 100%;
-    }
-}
-
-/* Extra large screens */
-@media screen and (min-width: 80rem) {
-    /* Fixed max width here so the sidebar isn't 2000 pixels long on huge screens */
-    .sidebar {
-        max-width: 25em;
     }
 }

@@ -63,13 +63,13 @@ main {
 /* Large screens */
 @media screen and (min-width: 60rem) {
     .root-flex-container {
-        flex-direction: row;
+        display: block;
     }
 
     /* Set a fixed max width here to obtain 50-70 characters per line on all screens */
     main {
         max-width: 60rem;
-        margin-left: 7rem;
+        margin-left: 29rem;
         padding-right: 3rem;
     }
 }
