@@ -59,3 +59,7 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
 .l3 {
     background-color: #c79dd7;
 }
+
+@media screen and (max-width: 60rem) {
+    
+}

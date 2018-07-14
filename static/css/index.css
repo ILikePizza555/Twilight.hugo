@@ -40,3 +40,19 @@ main {
 .content-summary {
     margin: 1rem 0rem 1rem 0;
 }
+
+@media screen and (min-width: 48rem) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .root-flex-container {
+        flex-direction: row;
+    }
+}
