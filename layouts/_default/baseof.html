@@ -3,14 +3,23 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href='{{ "css/index.css" | relURL }}'></link>
+
         <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
     </head>
     <body>
-        <nav>
-
-        </nav>
-        <main>
-            {{ block "main" .}} {{ end }}
-        </main>
+        <div class="root flex-container">
+            <nav>
+                <div class="l-container">
+                    <p class="l l1"></p>
+                    <p class="l l2"></p>
+                    <p class="l l3"></p>
+                </div>
+            </nav>
+            <main>
+                {{ block "main" .}} {{ end }}
+            </main>
+        </div>
     </body>
 </html>

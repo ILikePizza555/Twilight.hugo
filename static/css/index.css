@@ -1,0 +1,49 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+nav {
+    width: 18em;
+    background-color: #363b74;
+}
+
+.l-container {
+    width: 15px;
+    height: 100%;
+    float: right;
+}
+
+.l-container > .l {
+    float: left;
+    width: 5px;
+    height: 100%;
+    margin: 0px;
+}
+
+.l1 {
+    background-color:#4d1b7b;
+}
+
+.l2 {
+    background-color: #ef4f91;
+}
+
+.l3 {
+    background-color: #c79dd7;
+}
+
+.flex-container {
+    display: flex;
+    align-content: flex-start;
+}
+
+.root {
+    height: 100%;
+}
+
+@media (min-width: 48em) {
+
+}
