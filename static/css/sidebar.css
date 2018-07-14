@@ -86,6 +86,7 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
     }
 }
 
+/* Fixed max width here so the sidebar isn't 2000 pixels long on huge screens */
 @media screen and (min-width: 80rem) {
     .sidebar {
         max-width: 25em;

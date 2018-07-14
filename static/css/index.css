@@ -60,6 +60,7 @@ main {
         flex-direction: row;
     }
 
+    /* Set a fixed max width here to obtain 50-70 characters per line on all screens */
     main {
         max-width: 60rem;
         margin-left: 7rem;
