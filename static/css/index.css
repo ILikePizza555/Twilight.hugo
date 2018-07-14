@@ -66,10 +66,18 @@ main {
         display: block;
     }
 
-    /* Set a fixed max width here to obtain 50-70 characters per line on all screens */
     main {
+        /* Set a fixed max width here to obtain 50-70 characters per line on all screens */
         max-width: 60rem;
-        margin-left: 29rem;
+        /* Sidebar width is 18rem, and we want a margin of 7. 18 + 7 = 25 */
+        margin-left: 25rem;
         padding-right: 3rem;
+    }
+}
+
+/* Extra Large Screens */
+@media screen and (min-width: 80rem) {
+    main {
+        margin-left: 29rem;
     }
 }

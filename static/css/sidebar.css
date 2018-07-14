@@ -78,7 +78,7 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
         /* Need to fix the sidebar so that it stays on the side as we scroll. */
         position: fixed;
         height: 100%;
-        width: 22em;
+        width: 18em;
     }
 
     .l-container {
@@ -90,5 +90,11 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
     .l-container > .l {
         width: 5px;
         height: 100%;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .sidebar {
+        width: 22rem;
     }
 }
