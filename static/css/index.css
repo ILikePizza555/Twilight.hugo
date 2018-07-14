@@ -63,5 +63,6 @@ main {
     main {
         max-width: 60rem;
         margin-left: 7rem;
+        padding-right: 3rem;
     }
 }

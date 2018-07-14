@@ -72,7 +72,6 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
 @media screen and (min-width: 60rem) {
     .sidebar {
         display: flex;
-        max-width: 25%;
     }
 
     .l-container {
@@ -84,5 +83,11 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
     .l-container > .l {
         width: 5px;
         height: 100%;
+    }
+}
+
+@media screen and (min-width: 80rem) {
+    .sidebar {
+        max-width: 25em;
     }
 }
