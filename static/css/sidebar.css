@@ -60,6 +60,19 @@ CSS for the sidebar, kept separate from the main CSS since it's styleing tends t
     background-color: #c79dd7;
 }
 
-@media screen and (max-width: 60rem) {
-    
+@media screen and (min-width: 60rem) {
+    .sidebar {
+        display: flex;
+    }
+
+    .l-container {
+        width: 15px;
+        height: 100%;
+        flex-direction: row;
+    }
+
+    .l-container > .l {
+        width: 5px;
+        height: 100%;
+    }
 }
