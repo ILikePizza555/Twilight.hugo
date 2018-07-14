@@ -1,7 +1,7 @@
 /*
 CSS for the sidebar, kept separate from the main CSS since it's styleing tends to be different
 */
-aside {
+.sidebar {
     background-color: #363b74;
 }
 
