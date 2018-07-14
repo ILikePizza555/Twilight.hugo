@@ -3,5 +3,22 @@
 {{ end }}
 
 {{ define "main" }}
-    <p> Hi</p>
+    {{ $list_types := .Params.list_types | default .Site.Params.list_types }}
+    {{ $paginator := .Paginate (where .Data.Pages.ByDate "Type" "in" $list_types) 10}}
+
+    {{ range $paginator.Pages.Reverse }}
+        <article class="list-item">
+            <header class="article-header">
+                <h1 class="article-header"><a href="{{.RelPermalink}}">{{upper .Title}}</a></h1>
+                <small class="date">{{ .Date.Format "01 January 2006" }}</small>
+            </header>
+            <section class="content-summary">
+                {{ .Summary }}
+            </section>
+        </article>
+    {{ end }}
+
+    <div class="text-center">
+        {{ template "_internal/pagination.html" . }}
+    </div>
 {{ end }}
