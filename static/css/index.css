@@ -9,20 +9,31 @@ body {
     font-size: 16px;
 }
 
-.flex-container {
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.root-flex-container {
+    height: 100%;
     display: flex;
-    align-content: flex-start;
 }
 
 aside {
-    width: 18em;
+    display: flex;
     background-color: #363b74;
+}
+
+.aside-content-container {
+    flex-grow: 1;
+    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+
+    color: #ffffff;
 }
 
 .l-container {
     width: 15px;
     height: 100%;
-    float: right;
+    align-self: flex-end;
 }
 
 .l-container > .l {
@@ -44,16 +55,13 @@ aside {
     background-color: #c79dd7;
 }
 
-.root {
-    height: 100%;
-}
-
 @media (max-width: 48em) {
-    .flex-container {
+    .root-flex-container  {
         flex-direction: column;
     }
 
     aside {
+        flex-direction: column;
         width: 100%;
         height: 18em;
     }

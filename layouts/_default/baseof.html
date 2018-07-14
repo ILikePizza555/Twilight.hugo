@@ -5,13 +5,16 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href='{{ "css/index.css" | relURL }}'></link>
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Montserrat" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,600|Montserrat" rel="stylesheet">
 
         <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
     </head>
     <body>
-        <div class="root flex-container">
+        <div class="root-flex-container">
             <aside>
+                <div class="aside-content-container">
+                    <h1>{{ .Site.Params.title }}</h1>
+                </div>
                 <div class="l-container">
                     <p class="l l1"></p>
                     <p class="l l2"></p>
