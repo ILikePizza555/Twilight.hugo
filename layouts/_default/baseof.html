@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href='{{ "css/index.css" | relURL }}'></link>
+        <link rel="stylesheet" href='{{ "css/sidebar.css" | relURL }}'></link>
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans:200,400,600|Source+Serif+Pro" rel="stylesheet">
         <title>{{ block "title" . }} {{ .Site.Title }} {{ end }}</title>
     </head>
@@ -15,12 +16,16 @@
                     <h1>{{ .Site.Params.title }}</h1>
                     <small>{{ .Site.Params.tagline }}</small>
                     <nav class="nav-links">
-                        {{range .Site.Params.links}}
-                            <div class="link"><a href="{{ .href }}">{{ upper .text }}</a></div>
-                        {{end}}
-                        {{range .Site.Params.profile.links }}
-                            <div class="link"><a href="{{ .href }}">{{ upper .text }}</a></div>
-                        {{ end }}
+                        <div class="site-links">
+                            {{range .Site.Params.links}}
+                                <div class="link"><a href="{{ .href }}">{{ upper .text }}</a></div>
+                            {{end}}
+                        </div>
+                        <div class="profile-links">
+                            {{range .Site.Params.profile.links }}
+                                <div class="link"><a href="{{ .href }}">{{ upper .text }}</a></div>
+                            {{ end }}
+                        </div>
                     </nav>
                 </header>
                 <div class="l-container">
