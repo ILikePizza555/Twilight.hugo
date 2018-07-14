@@ -4,13 +4,14 @@ body {
     padding: 0px;
     height: 100%;
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     line-height: 1.6;
     font-size: 16px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+    text-transform: uppercase;
 }
 
 .root-flex-container {
@@ -25,9 +26,16 @@ aside {
 
 .aside-content-container {
     flex-grow: 1;
-    padding: 1.5rem 0.5rem 1.5rem 0.5rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    color: white;
 
-    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-header > h1 {
+    margin-bottom: 0px;
 }
 
 .l-container {
