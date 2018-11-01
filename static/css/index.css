@@ -38,6 +38,11 @@ main {
     padding: 1rem;
 }
 
+article {
+    margin-top: 10%;
+    margin-bottom: 50%;
+}
+
 .list-item {
     margin: 1rem 0rem 3rem 0rem;
 }
